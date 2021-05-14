@@ -49,7 +49,11 @@ public class VehicleController {
 	{
 		return vehService.findByName(name);
 	}
-	
+		@GetMapping("/findByVehicleNo/{id}")
+	public Optional<VehicleEntity> findByPk(@PathVariable ("id") String id)
+	{
+		return vehService.findByPk(id);
+	}
 	
 	
 	@GetMapping("/getAllVehicle")
