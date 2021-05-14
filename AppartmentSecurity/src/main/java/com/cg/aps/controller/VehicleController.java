@@ -15,7 +15,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.cg.aps.entities.VehicleEntity;
 import com.cg.aps.service.VehicleServiceImpl;
-
+/**
+* @author Rashi Goenka
+*            
+*/
 @RestController
 @RequestMapping("/vehicle")
 public class VehicleController {
