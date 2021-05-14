@@ -44,10 +44,6 @@ public class FlatRentServiceImpl implements FlatRentServiceInt {
 		
 	}
 
-//	@Override
-//	public List<FlatRentEntity> findByRenterName(String name) {
-//		return dao.findByRenterName(name);
-//	}
 
 
 	@Override
