@@ -60,6 +60,11 @@ public class VehicleServiceImpl implements VehicleServiceInt {
 			return dao.findByName(name);
 	
 	}
+	@Override
+	public Optional<VehicleEntity> findByPk(String id) {
+		
+		return dao.findById(id);
+	}
 
 	@Override
 	public List<VehicleEntity> search() {
