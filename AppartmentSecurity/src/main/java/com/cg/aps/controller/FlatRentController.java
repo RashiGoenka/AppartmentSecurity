@@ -55,14 +55,6 @@ import com.cg.aps.service.FlatRentServiceImpl;
 		}
 		
 		
-//		@GetMapping("/getName/{name}")
-//		List<FlatRentEntity> getByName(@PathVariable ("name") String name)
-//		{
-//			
-//			return service.findByRenterName(name);
-//		}
-//		
-		
 		
 		@GetMapping("/getAll")
 		public List<FlatRentEntity> search()
