@@ -22,6 +22,8 @@ public interface VehicleServiceInt  {
 	
 	public List<VehicleEntity> findByName(String name);
 	
+	public Optional<VehicleEntity> findByPk(String id);
+	
 	public List<VehicleEntity> search();
 	
 	
