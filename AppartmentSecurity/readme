@@ -1,0 +1,31 @@
+<--Vehicle-->
+
+POST
+http://localhost:9091/vehicle/addVehicle
+ {   
+        "vehicleNo": "BR201",
+        "name": "Pulsar",
+        "parkingNo": "2",
+        "arrivalTime": "10:30",
+        "departureTime": "11:30",
+        "date1": "2021-10-12",
+        "vehicleType": "2-wheel"
+ }
+ 
+ PUT
+ http://localhost:9091/vehicle/updateVehicle
+  {
+         "vehicleNo": "BR201",
+        "name": "Pulsar",
+        "parkingNo": "4",
+        "arrivalTime": "10:30",
+        "departureTime": "11:30",
+        "date1": "2021-10-12",
+        "vehicleType": "2-wheel"
+ }
+ 
+ GET
+ http://localhost:9091/vehicle/getAllVehicle
+ 
+ GET
+ http://localhost:9091/vehicle/findByName/Pulsar
