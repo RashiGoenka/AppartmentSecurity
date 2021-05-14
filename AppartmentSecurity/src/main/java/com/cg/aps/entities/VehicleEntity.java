@@ -10,13 +10,16 @@ import javax.persistence.Id;
 
 import javax.persistence.Table;
 
+/**
+* @author Rashi Goenka
+*            
+*/
+
 @Entity
 @Table(name="Vehicle")
 public class VehicleEntity  {
 	
 	@Id
-//	@GeneratedValue(strategy=GenerationType.AUTO)
-//	private int vehicleid;
 	private String vehicleNo;
 	private String name;
 	private String parkingNo;
@@ -97,12 +100,7 @@ public class VehicleEntity  {
 	public void setVehicleType(String vehicleType) {
 		this.vehicleType = vehicleType;
 	}
-//	 public int getVehicleid() {
-//			return vehicleid;
-//		}
-//		public void setVehicleid(int vehicleid) {
-//			this.vehicleid = vehicleid;
-//		}
+
 		public Date getDate1() {
 			return date1;
 		}
