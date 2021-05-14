@@ -25,8 +25,6 @@ public interface FlatRentServiceInt {
 	
 	public String delete(String id);
 	
-//	public List<FlatRentEntity> findByRenterName(String name);
-	
 
 	public List<FlatRentEntity> search();
 	
