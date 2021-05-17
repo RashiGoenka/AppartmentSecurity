@@ -11,6 +11,11 @@ import org.springframework.stereotype.Service;
 import com.cg.aps.entities.VehicleEntity;
 import com.cg.aps.exception.RecordNotFoundException;
 import com.cg.aps.repository.VehicleDAOInt;
+
+/*
+ * @author: Rashi Goenka
+ * 
+ */
 @Service
 @Transactional
 public  class VehicleServiceImpl implements VehicleServiceInt {
