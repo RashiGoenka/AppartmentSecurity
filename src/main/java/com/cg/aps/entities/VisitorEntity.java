@@ -10,7 +10,10 @@ import javax.persistence.Id;
 //import javax.persistence.Inheritance;
 //import javax.persistence.InheritanceType;
 import javax.persistence.Table;
-
+/*
+ * @author: Ashutosh Ojha
+ * 
+ */
 
 @Entity
 @Table(name="Visitor")
