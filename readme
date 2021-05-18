@@ -55,3 +55,59 @@ http://localhost:9091/vehicle/addVehicle
         "date1": "2021-10-12",
         "vehicleType": "2-wheel"
  }
+ 
+ 
+ --Flat and FlatRent--
+@PostMapping
+http://localhost:9091//Flat//addFlat
+{
+    "flatNo":"52",
+    "ownerName":"ram",
+     "floorNo":"5",
+    "flatType":"none"
+
+}
+@GetMapping
+http://localhost:9091//Flat//getName/ram
+@PutMapping
+http://localhost:9091//Flat///updateFlat
+{
+    "flatNo":"52",
+    "ownerName":"ram",
+     "floorNo":"5",
+    "flatType":"Appartment"
+}
+@DeleteMapping
+http://localhost:9091//Flat//deleteFlat/52
+@GetMapping
+http://localhost:9091//Flat//getAll
+
+
+@Post
+http://localhost:9091//FlatRent///addFlatRent
+{
+    "flatNo":"52",
+    "ownerName":"ram",
+     "amount":"5",
+    "type":"none"
+
+}
+@Put    Update
+http://localhost:9091//FlatRent///updateFlatRent
+{
+     "flatNo":"52",
+    "ownerName":"ram",
+     "amount":"5",
+    "type":"3Bhk"
+
+}
+@Getmapping by name
+http://localhost:9091//FlatRent//getName/ram
+@DeleteMapping
+http://localhost:9091//FlatRent//deleteFlatRent/52
+@GetMapping
+http://localhost:9091//FlatRent//getAll
+
+
+
+
