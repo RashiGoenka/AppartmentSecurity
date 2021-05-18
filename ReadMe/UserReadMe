@@ -1,0 +1,60 @@
+POST : http://localhost:9091/user/adduser
+
+{
+  "roleId"   :  101,
+  "firstName":  "Riti",
+  "lastName" :  "Roy",
+  "loginId"  :  "riti",
+  "password" :  "riti",
+  "mobileNo" :  "7074357922",
+  "emailId"  :  "royriti@gmail.com"
+ }
+ 
+ GET  :  http://localhost:9091/user/searchuser
+ 
+ [
+  {
+        "roleId": 101,
+        "firstName": "Riti",
+        "lastName": "Roy",
+        "loginId": "riti",
+        "password": "riti",
+        "mobileNo": "7074357922",
+        "emailId": "royriti@gmail.com"
+    }
+]
+
+PUT  :  http://localhost:9091/user/updateuser
+
+{
+  "roleId"   :  103,
+  "firstName":  "Raju",
+  "lastName" :  "Roy",
+  "loginId"  :  "riti",
+  "password" :  "riti",
+  "mobileNo" :  "7074357922",
+  "emailId"  :  "royriti@gmail.com"
+ }
+ 
+ GET  :		http://localhost:9091/user/searchuser
+ 
+ [
+    {
+        "roleId": 101,
+        "firstName": "Riti",
+        "lastName": "Roy",
+        "loginId": "riti",
+        "password": "riti",
+        "mobileNo": "7074357922",
+        "emailId": "royriti@gmail.com"
+    },
+    {
+        "roleId": 103,
+        "firstName": "Raju",
+        "lastName": "Roy",
+        "loginId": "riti",
+        "password": "riti",
+        "mobileNo": "7074357922",
+        "emailId": "royriti@gmail.com"
+    }
+]

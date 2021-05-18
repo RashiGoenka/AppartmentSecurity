@@ -1,0 +1,30 @@
+
+POST
+http://localhost:9091/delivery/addDelivery
+{
+    "ownerName" : "Mehar",
+    "time1" : "11:30",
+    "date1" : "2021-05-10",
+    "status": "Pending"
+}
+
+PUT
+http://localhost:9091/delivery/updateDelivery
+{
+    "ownerName" : "Mehar",
+    "time1" : "11:30",
+    "date1" : "2021-05-10",
+    "status": "Delivered"
+}
+
+GET
+http://localhost:9091/delivery/getAll
+
+DELETE
+http://localhost:9091/delivery/deleteDelivery
+{
+    "ownerName" : "Mehar",
+    "time1" : "11:30",
+    "date1" : "2021-05-10",
+    "status": "Delivered"
+}

@@ -1,0 +1,39 @@
+POST
+http://localhost:9091/visitor/addVisitor
+{
+        "flatNo": "112A",
+        "name": "Sky",
+        "ownerName": "Ram",
+        "arrivalTime": "11:30",
+        "departureTime": "4:15",
+        "date": "2021-05-10"
+    }
+
+PUT
+http://localhost:9091/visitor/updateVisitor
+{
+        "flatNo": "112A",
+        "name": "Sky",
+        "ownerName": "Ram",
+        "arrivalTime": "11:30",
+        "departureTime": "4:15",
+        "date": "2021-05-10"
+    }
+
+GET
+http://localhost:9091/visitor/getbyname/Sky
+
+
+GET
+http://localhost:9091/visitor/findAll
+
+DELETE
+http://localhost:9091/visitor/deleteVisitor
+{
+        "flatNo": "112A",
+        "name": "Sky",
+        "ownerName": "Ram",
+        "arrivalTime": "11:30",
+        "departureTime": "4:15",
+        "date": "2021-05-10"
+    }

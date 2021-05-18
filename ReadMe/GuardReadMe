@@ -1,0 +1,136 @@
+    GUARDSALARY
+    
+ POST 'http://localhost:9091/guardSalary/addGuard' \
+--header 'Content-Type: application/json' \
+--data-raw '  {
+       "name": "Radha",
+        "userId": 10,
+        "amount": 5000,
+        "status": "holiday",
+        "date": "2020-02-21"
+    }
+    
+ GET 'http://localhost:9091/guardSalary/getAll' \
+--header 'Content-Type: application/json' \
+--data-raw ' 
+       {
+        "name": "Radha",
+        "amount": 5000,
+        "status": "holiday",
+        "date": "2020-02-21T00:00:00.000+00:00",
+        "userId": 10
+    }
+ 
+    
+ PUT 'http://localhost:9091/guardSalary/updateGuard' \
+--header 'Content-Type: application/json' \
+--data-raw '   {
+       "name": "Radha",
+        "userId": 13,
+        "amount": 6000,
+        "status": "holiday",
+        "date": "2020-02-21"
+    }
+       
+  GET 'http://localhost:9091/guardSalary/getAll' \
+--header 'Content-Type: application/json' \
+--data-raw '   {
+        "name": "Radha",
+        "amount": 6000,
+        "status": "holiday",
+        "date": "2020-02-21T00:00:00.000+00:00",
+        "userId": 13
+    }
+    
+ DELETE 'http://localhost:9091/guardSalary/deleteGuard' \
+--header 'Content-Type: application/json' \
+--data-raw '  {
+       "name": "Radha",
+        "userId": 13,
+        "amount": 6000,
+        "status": "holiday",
+        "date": "2020-02-21"
+    }
+    http://localhost:9091/guardSalary/getAll
+    []
+  GET  http://localhost:9091/guardSalary/getName/KARAN
+  {
+       "name": "KARAN",
+        "userId": 13,
+        "amount": 6000,
+        "status": "holiday",
+        "date": "2020-02-21"
+    }
+    
+        GUARD_SHIFT
+        
+ POST 'http://localhost:9091/guardShift/addGuard' \
+--header 'Content-Type: application/json' \
+--data-raw '   {
+        "userid": 100,
+         "name": "shyamaa",
+         "time": 11,
+         "date":"2020-02-21"
+
+    }'
+    
+  GET 'http://localhost:9091/guardShift/getAll' \
+--header 'Content-Type: application/json' \
+--data-raw '   {
+        
+        "userid": 100,
+        "name": "shyamaa",
+        "time": "11",
+        "date": "2020-02-21T00:00:00.000+00:00"
+    }'
+ DELETE 'http://localhost:9091/guardShift/deleteGuard/100' \
+--header 'Content-Type: application/json' \
+--data-raw '   {
+        "userid": 100,
+         "name": "shyamaa",
+         "time": 11,
+         "date":"2020-02-21"
+
+    }'
+    GET 'http://localhost:9091/guardShift/getAll' \
+    []
+    
+      
+      GUARD_TRAINING
+     POST 'http://localhost:9091/guard/addGuard' \
+--header 'Content-Type: application/json' \
+--data-raw '   {
+       
+        "name": "shyamaa",
+        "mobileNo": "999000",
+        "status": "working",
+        "date": "2020-02-12",
+        "userId": 10,
+        "timing": "11:30"
+
+    }'
+    GET http://localhost:9091/guard/getAll
+    [
+    {
+        "name": "shyamaa",
+        "mobileNo": "999000",
+        "status": "working",
+        "date": "2020-02-12T00:00:00.000+00:00",
+        "userId": 10,
+        "timing": "11:30"
+    }
+]
+GET http://localhost:9091/guard/getName/shyamaa
+[
+    {
+        "name": "shyamaa",
+        "mobileNo": "999000",
+        "status": "working",
+        "userId": 10,
+        "timing": "11:30",
+        "date": "2020-02-12T00:00:00.000+00:00"
+    }
+]
+    
+        
+        
